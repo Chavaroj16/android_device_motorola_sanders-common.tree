@@ -1,6 +1,0 @@
-#
-# system.prop for sanders
-#
-
-# Display
-ro.sf.lcd_density=480

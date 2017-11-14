@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2016 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# Inherit from msm8953-common
-$(call inherit-product, device/motorola/msm8953-common/msm8953.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.target.rc
+$(call inherit-product, device/motorola/sanders/full_sanders.mk)
 
-# Screen density
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi 
+PRODUCT_NAME := omni_sanders
