@@ -35,15 +35,13 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 vmalloc=400M androidboot.bootdevice=7824900.sdhci movablecore=160M androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 vmalloc=350M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --second_offset 0x00f00000 -dt device/motorola/sanders/dt.img
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/sanders/mkbootimg.mk
-KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
-TARGET_KERNEL_CONFIG := sanders_defconfig
+TARGET_PREBUILT_KERNEL := device/motorola/sanders/kernel
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
