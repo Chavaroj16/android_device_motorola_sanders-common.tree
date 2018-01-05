@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,4 +23,5 @@ export DEVICE_PLATFORM=msm8953-common
 export VENDOR=motorola
 export DEVICE_BRINGUP_YEAR=2017
 
-./../../$VENDOR/$DEVICE_PLATFORM/extract-files.sh $@ 
+./../../$VENDOR/$DEVICE_PLATFORM/extract-files.sh $@
+

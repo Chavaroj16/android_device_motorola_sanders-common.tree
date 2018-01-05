@@ -20,3 +20,4 @@ Camera  | Dual 13 MP, f/2.0, autofocus, dual-LED (dual tone) flash
 Copyright 2017 - The LineageOS Project.
 
 ![Moto G5S Plus](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5s-plus-1.jpg "Moto G5S Plus")
+

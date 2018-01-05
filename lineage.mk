@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,4 +30,5 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/sanders/sanders:7.1.1/NPS26.116-45/51:user/release-keys \
     PRIVATE_BUILD_DESC="sanders-7.1.1/NPS26.116-45/51:user/release-keys" \
-    PRODUCT_NAME="Moto G5S Plus" 
+    PRODUCT_NAME="Moto G5S Plus"
+
